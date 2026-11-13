@@ -14,13 +14,7 @@ typeorm migration:generate -d <path/to/datasource> <migration-name>
 
 The `-d` argument value should specify the path where your [DataSource](../data-source/1-data-source.md) instance is defined.
 
-Alternatively you can also specify name with `--name` param
-
-```shell
-typeorm migration:generate -- -d <path/to/datasource> --name=<migration-name>
-```
-
-or use a full path:
+You can also use a full path:
 
 ```shell
 typeorm migration:generate -d <path/to/datasource> <path/to/migrations>/<migration-name>
